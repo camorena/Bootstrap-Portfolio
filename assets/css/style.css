@@ -96,7 +96,7 @@ nav {
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
@@ -452,10 +452,9 @@ input[type=submit] {
 
 
 @media screen and (max-width: 768px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
+  .navbar a {
+    float: none;
+    width: 100%;
   }
-  .row.content {height:auto;} 
 }
 

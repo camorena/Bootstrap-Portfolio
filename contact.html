@@ -12,62 +12,73 @@
 </head>
 
 <body>
-
   <nav class="navbar">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Carlos Moreno</a>
+      <div class="col-sm-2">
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="index.html">About</a>
-          </li>
-          <li>
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="active">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
+      <div class="col-sm-8 text-left">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Carlos Moreno</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="col-sm-2">
+      </div>
+
     </div>
   </nav>
 
   <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+    <div class="row content">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 text-left">
+        <h1>Contact</h1>
+        <p>
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
+        </p>
+      </div>
+      <div class="col-sm-2">
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
+      </div>
+    </div>
   </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy;
+  <footer class="footer">
+    <div id="copy" class="container"></div>
+    <span>Copyright &copy;</span>
     </div>
   </footer>
 </body>
